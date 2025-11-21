@@ -1,58 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iShare Shop – Premium Purple Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple: { 500: '#8b5cf6', 600: '#7c3aed', 700: '#6d28d9', 800: '#5b21b6', 900: '#4c1d95' }
+          }
+        }
+      }
+    }
+  </script>
 </head>
+<body class="min-h-screen bg-gray-900 text-white overflow-x-hidden">
 
-<body>
-    <!-- Header -->
-    <div>
-        <div class="navbar-top">
-            <h4>Free shipping on orders over $50</h4>
-            <div class="navbar-top-right">
-                <a href="#">Help</a>
-                <a href="#">Track Order</a>
-                <a href="#">Contact</a>
-            </div>
-        </div>
-        <div class="navbar-bottom">
-            <!-- I con logo svg -->
-            <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Background circle -->
-                <circle cx="20" cy="20" r="18" fill="#3C7AC0" />
-
-                <!-- Share icon -->
-                <circle cx="16" cy="20" r="4" fill="white" />
-                <circle cx="24" cy="20" r="4" fill="white" />
-                <circle cx="20" cy="16" r="4" fill="white" />
-
-                <!-- Connecting lines -->
-                <line x1="16" y1="20" x2="24" y2="20" stroke="white" stroke-width="2" />
-                <line x1="20" y1="16" x2="20" y2="24" stroke="white" stroke-width="2" />
-
-                <!-- Brand name -->
-                <text x="45" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600"
-                    fill="#3C7AC0">iShare</text>
-                <text x="45" y="32" font-family="Arial, sans-serif" font-size="10" font-weight="400"
-                    fill="#666666">E-Commerce</text>
-            </svg>
-
-            <div class="navbar-bottom-left">
-                <a href="#">Home</a>
-                <a href="#">New Arrivals</a>
-                <a href="#">Best Sellers</a>
-                <a href="#">Limited Editions</a>
-                <a href="#">Gift Ideas</a>
-                <a href="#">Sale</a>
-                <a href="#">Account</a>
-            </div>
-
-        </div>
+  <!-- ==================== HERO (from previous message) ==================== -->
+  <section class="relative bg-gradient-to-br from-purple-900 via-purple-800 to-indigo-900 min-h-screen flex items-center">
+    <div class="absolute inset-0 opacity-20">
+      <div class="h-full w-full bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
     </div>
 
-</body>
+    <div class="relative container mx-auto px-6 lg:px-12 xl:max-w-7xl">
+      <div class="inline-flex items-center bg-white/20 backdrop-blur-sm text-sm px-4 py-2 rounded-full mb-8">
+        <span class="w-2 h-2 bg-green-400 rounded-full mr-2"></span>
+        Limited Time Offer - Up to 50% Off
+      </div>
 
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8">
+          <h1 class="text-6xl lg:text-8xl font-black leading-none">
+            Shop<br>
+            <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Smarter</span><br>
+            <span class="text-white">Live Better</span>
+          </h1>
+          <p class="text-lg lg:text-xl text-gray-300 max-w-lg">
+            Discover curated collections of premium products at unbeatable prices. Quality guaranteed, delivered to your door.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a href="#" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full font-semibold text-lg shadow-lg transition">
+              Start Shopping
+            </a>
+            <a href="#" class="inline-flex items-center border border-white/30 px-8 py-4 rounded-full font-medium hover:bg-white/10 transition">
+              New Arrivals
+            </a>
+          </div>
+
+          <div class="flex flex-wrap gap-12 pt-12">
+            <div><div class="text-4xl font-bold">50K+</div><div class="text-gray-400">Happy Customers</div></div>
+            <div><div class="text-4xl font-bold">1000+</div><div class="text-gray-400">Products</div></div>
+            <div><div class="text-4xl font-bold">4.9★</div><div class="text-gray-400">Rating</div></div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="relative bg-gradient-to-br from-purple-600/30 to-pink-600/30 backdrop-blur-md rounded-3xl p-8 shadow-2xl border border-white/10">
+            <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+              <span class="bg-gradient-to-r from-red-500 to-pink-500 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg">Hot Deal</span>
+            </div>
+            <div class="absolute top-6 left-6"><span class="bg-cyan-500 text-white px-5 py-2 rounded-full text-sm">Premium Quality</span></div>
+            <div class="absolute top-6 right-6"><span class="bg-green-500 text-white px-5 py-2 rounded-full text-sm">Free Shipping</span></div>
+            <div class="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl p-12">
+              <img src="https://images.unsplash.com/photo-1505740420928-3e67941e3b13?w=600&h=600&fit=crop" alt="Headphones" class="w-full drop-shadow-2xl">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE iShare (exact match to your new screenshot) ==================== -->
+  <section class="py-24 bg-white">
+    <div class="container mx-auto px-6 lg:px-12 xl:max-w-7xl">
+      <h2 class="text-center text-4xl md:text-5xl font-bold mb-4">
+        Why Choose <span class="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">iShare</span>
+      </h2>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto mb-16">
+        Experience shopping like never before with our premium services and customer-first approach
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Free Shipping -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 shadow-lg">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-1-1-7 7-7-7-1 1 8 8 8-8z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Free Shipping</h3>
+          <p class="text-gray-600 text-sm">Free delivery on orders over $50 with express shipping options</p>
+        </div>
+
+        <!-- Secure Payment -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-teal-500 to-green-600 shadow-lg">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c1.104 0 2-.896 2-2s-.896-2-2-2-2 .896-2 2 .896 2 2 2zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Payment</h3>
+          <p class="text-gray-600 text-sm">100% secure payment processing with SSL encryption</p>
+        </div>
+
+        <!-- Best Prices -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-orange-500 to-yellow-500 shadow-lg">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Best Prices</h3>
+          <p class="text-gray-600 text-sm">Competitive prices guaranteed with price match policy</p>
+        </div>
+
+        <!-- Best Deals -->
+        <div class="text-center">
+          <div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-br from-pink-500 to-rose-600 shadow-lg">
+            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zM12 14c-3.313 0-6 1.343-6 3v1h12v-1c0-1.657-2.687-3-6-3z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2">Best Deals</h3>
+          <p class="text-gray-600 text-sm">Exclusive discounts and flash sales for our members</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Featured Products Heading (exact style from your last screenshot) ==================== -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-12 xl:max-w-7xl text-center">
+      <div class="inline-flex items-center bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium mb-4">
+        Featured Collection
+      </div>
+      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+        Products
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Discover our carefully curated selection of premium products that combine style, performance, and value.
+      </p>
+    </div>
+  </section>
+
+  <!-- You can now add your product grid/cards here -->
+
+</body>
 </html>
