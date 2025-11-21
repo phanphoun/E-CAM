@@ -66,7 +66,7 @@
             <div class="absolute top-6 left-6"><span class="bg-cyan-500 text-white px-5 py-2 rounded-full text-sm">Premium Quality</span></div>
             <div class="absolute top-6 right-6"><span class="bg-green-500 text-white px-5 py-2 rounded-full text-sm">Free Shipping</span></div>
             <div class="bg-gradient-to-br from-yellow-300 to-orange-400 rounded-2xl p-12">
-              <img src="https://images.unsplash.com/photo-1505740420928-3e67941e3b13?w=600&h=600&fit=crop" alt="Headphones" class="w-full drop-shadow-2xl">
+              <img src="images/product.png" alt="Headphones" class="w-full drop-shadow-2xl">
             </div>
           </div>
         </div>
@@ -125,21 +125,157 @@
   </section>
 
   <!-- ==================== Featured Products Heading (exact style from your last screenshot) ==================== -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 lg:px-12 xl:max-w-7xl text-center">
-      <div class="inline-flex items-center bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium mb-4">
-        Featured Collection
+  <section class="py-20 px-6" style="background: rgb(212, 239, 248);">
+    <div class="max-w-7xl mx-auto ">
+
+      <!-- Heading -->
+      <div class="text-center mb-16">
+        <span class="inline-block bg-purple-600 text-white px-6 py-2.5 rounded-full text-sm font-bold mb-4">
+          Featured Collection
+        </span>
+        <h2 class="text-5xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+          Products
+        </h2>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+          Discover our carefully curated selection of premium products that combine quality, style, and innovation
+        </p>
       </div>
-      <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
-        Products
-      </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Discover our carefully curated selection of premium products that combine style, performance, and value.
-      </p>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Product Card 1 -->
+        <div class="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <!-- Red Curved Badge -->
+          <div class="absolute top-0 inset-x-0 h-12 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-10 bg-red-600 rounded-b-3xl"></div>
+            <span class="absolute inset-x-0 top-3 text-white text-xs font-bold text-center tracking-wider">Best Seller</span>
+          </div>
+
+          <div class="pt-16 pb-8 px-8 bg-gradient-to-b from-transparent to-gray-50">
+            <img src="images/headphone.png" alt="Headphones" class="w-full h-64 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500 img-fluid">
+          </div>
+
+          <div class="px-8 pb-8 space-y-4">
+            <h3 class="font-bold text-lg text-gray-900">Premium Wireless Headphones</h3>
+            <div class="flex items-center gap-2">
+              <span class="text-yellow-500 text-xl">★★★★★</span>
+              <span class="text-gray-500 text-sm">(128)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-3xl font-bold text-purple-600">$199</span>
+              <span class="text-gray-400 line-through">$299</span>
+              <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold">Save $100</span>
+            </div>
+            <div class="flex gap-4 pt-4">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-pink-600 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                Add to Cart
+              </button>
+              <a href="#" class="text-purple-600 font-medium hover:text-purple-800">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="absolute top-0 inset-x-0 h-12 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-10 bg-red-600 rounded-b-3xl"></div>
+            <span class="absolute inset-x-0 top-3 text-white text-xs font-bold text-center tracking-wider">Popular</span>
+          </div>
+          <div class="pt-16 pb-8 px-8 bg-gradient-to-b from-transparent to-gray-50">
+            <img src="images/speaker.png" alt="Speaker" class="w-full h-64 object-contain drop-shadow-2xl group-hover:scale-105 transition img-fluid">
+          </div>
+          <div class="px-8 pb-8 space-y-4">
+            <h3 class="font-bold text-lg text-gray-900">Bluetooth Portable Speaker</h3>
+            <div class="flex items-center gap-2">
+              <span class="text-yellow-500 text-xl">★★★★★</span>
+              <span class="text-gray-500 text-sm">(203)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-3xl font-bold text-purple-600">$79</span>
+              <span class="text-gray-400 line-through">$129</span>
+              <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold">Save $50</span>
+            </div>
+            <div class="flex gap-4 pt-4">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-pink-600 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                Add to Cart
+              </button>
+              <a href="#" class="text-purple-600 font-medium hover:text-purple-800">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="absolute top-0 inset-x-0 h-12 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-10 bg-red-600 rounded-b-3xl"></div>
+            <span class="absolute inset-x-0 top-3 text-white text-xs font-bold text-center tracking-wider">New</span>
+          </div>
+          <div class="pt-16 pb-8 px-8 bg-gradient-to-b from-transparent to-gray-50">
+            <img src="images/watch.png" alt="Watch" class="w-full h-64 object-contain drop-shadow-2xl group-hover:scale-105 transition">
+          </div>
+          <div class="px-8 pb-8 space-y-4">
+            <h3 class="font-bold text-lg text-gray-900">Smart Fitness Watch Pro</h3>
+            <div class="flex items-center gap-2">
+              <span class="text-yellow-500 text-xl">★★★★★</span>
+              <span class="text-gray-500 text-sm">(95)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-3xl font-bold text-purple-600">$299</span>
+              <span class="text-gray-400 line-through">$399</span>
+              <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold">Save $100</span>
+            </div>
+            <div class="flex gap-4 pt-4">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-pink-600 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                Add to Cart
+              </button>
+              <a href="#" class="text-purple-600 font-medium hover:text-purple-800">Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="group relative bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300">
+          <div class="absolute top-0 inset-x-0 h-12 overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-10 bg-red-600 rounded-b-3xl"></div>
+            <span class="absolute inset-x-0 top-3 text-white text-xs font-bold text-center tracking-wider">Sale</span>
+          </div>
+          <div class="pt-16 pb-8 px-8 bg-gradient-to-b from-transparent to-gray-50">
+            <img src="images/cameralen.png" alt="Camera Lens" class="w-full h-64 object-contain drop-shadow-2xl group-hover:scale-105 transition ">
+          </div>
+          <div class="px-8 pb-8 space-y-4">
+            <h3 class="font-bold text-lg text-gray-900">Professional Camera Lens 50mm</h3>
+            <div class="flex items-center gap-2">
+              <span class="text-yellow-500 text-xl">★★★★★</span>
+              <span class="text-gray-500 text-sm">(67)</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="text-3xl font-bold text-purple-600">$449</span>
+              <span class="text-gray-400 line-through">$599</span>
+              <span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-sm font-bold">Save $150</span>
+            </div>
+            <div class="flex gap-4 pt-4">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-pink-600 text-white font-bold py-3 rounded-xl shadow-lg transition">
+                Add to Cart
+              </button>
+              <a href="#" class="text-purple-600 font-medium hover:text-purple-800">Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- View All Button -->
+      <div class="text-center mt-16">
+        <a href="#" class="inline-flex items-center bg-gradient-to-r from-purple-600 to-pink-600 text-white font-bold px-10 py-4 rounded-full text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
+          View All Products →
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- You can now add your product grid/cards here -->
-
+  
 </body>
 </html>

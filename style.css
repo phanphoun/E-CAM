@@ -291,3 +291,8 @@ footer a:hover {
 .text-gradient-fallback {
   color: #6366f1;
 }
+
+.img-fluid{
+  max-width: 40%;
+  height: 50%;
+}
