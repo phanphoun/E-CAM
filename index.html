@@ -4,70 +4,415 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-CAM</title>
+    <title>iShare - Premium E-Commerce Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-      <!-- Header -->
-        <div>
-            <div class="navbar-top">
-                <p>Free shipping on orders over $50</p>
-                <div class="navbar-top-right">
-                    <a href="#">Help</a>
-                    <a href="#">Track Order</a>
-                    <a href="#">Contact</a>
-                </div>
+    <!-- Header -->
+    <header>
+        <div class="navbar-top">
+            <p>Free shipping on orders over $50</p>
+            <div class="navbar-top-right">
+                <a href="page/help.html">Help</a>
+                <a href="page/track-order.html">Track Order</a>
+                <a href="page/contact.html">Contact</a>
             </div>
-            <div class="navbar-bottom">
-                <!-- I con logo svg -->
+        </div>
+        <div class="navbar-bottom">
+            <a href="index.html" class="logo">
                 <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Background circle -->
                     <circle cx="20" cy="20" r="18" fill="#3C7AC0" />
-
-                    <!-- Share icon -->
                     <circle cx="16" cy="20" r="4" fill="white" />
                     <circle cx="24" cy="20" r="4" fill="white" />
                     <circle cx="20" cy="16" r="4" fill="white" />
-
-                    <!-- Connecting lines -->
                     <line x1="16" y1="20" x2="24" y2="20" stroke="white" stroke-width="2" />
                     <line x1="20" y1="16" x2="20" y2="24" stroke="white" stroke-width="2" />
-
-                    <!-- Brand name -->
-                    <text x="45" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600"
-                        fill="#3C7AC0">iShare</text>
-                    <text x="45" y="32" font-family="Arial, sans-serif" font-size="10" font-weight="400"
-                        fill="#666666">E-Commerce</text>
+                    <text x="45" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#3C7AC0">iShare</text>
+                    <text x="45" y="32" font-family="Arial, sans-serif" font-size="10" font-weight="400" fill="#666666">E-Commerce</text>
                 </svg>
+            </a>
 
-                <div class="navbar-bottom-left">
-                    <a href="#">Home</a>
-                    <a href="#">New Arrivals</a>
-                    <a href="#">Best Sellers</a>
-                    <a href="#">Limited Editions</a>
-                    <a href="#">Gift Ideas</a>
-                    <a href="#">Sale</a>
-                    <a href="#">Account</a>
-                </div>
-                <div class="navbar-bottom-search">
-                    <i class="fa fa-search"></i>
-                    <input type="text" placeholder="Search...">
-                </div>
+            <nav class="navbar-bottom-left">
+                <a href="index.html">Home</a>
+                <a href="page/products.html">Shop</a>
+                <a href="page/new-arrivals.html">New Arrivals</a>
+                <a href="page/best-sellers.html">Best Sellers</a>
+                <a href="page/sale.html">Sale</a>
+            </nav>
 
-                <div class="navbar-bottom-right">
-                    <i class="fa fa-heart"></i>
-                    <i class="fa fa-shopping-cart"></i>
-                    <i class="fa fa-user"></i>
-                </div>
+            <div class="navbar-bottom-search">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search products...">
+            </div>
 
+            <div class="navbar-bottom-right">
+                <a href="page/wishlist.html" class="icon-link"><i class="fa fa-heart"></i><span class="badge">0</span></a>
+                <a href="page/cart.html" class="icon-link"><i class="fa fa-shopping-cart"></i><span class="badge">0</span></a>
+                <a href="page/account.html" class="icon-link"><i class="fa fa-user"></i></a>
             </div>
         </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Products for Modern Living</h1>
+            <p>Discover exclusive collections curated just for you</p>
+            <a href="page/products.html" class="btn btn-primary">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-banner.jpg" alt="Hero Banner">
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>Handpicked items you'll love</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-1.jpg" alt="Product 1">
+                    <span class="badge-sale">-20%</span>
+                </div>
+                <div class="product-info">
+                    <h3>Premium Headphones</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>(234)</span>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$199.99</span>
+                        <span class="sale-price">$159.99</span>
+                    </div>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-2.jpg" alt="Product 2">
+                </div>
+                <div class="product-info">
+                    <h3>Wireless Mouse</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span>(156)</span>
+                    </div>
+                    <div class="price">
+                        <span class="sale-price">$39.99</span>
+                    </div>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-3.jpg" alt="Product 3">
+                    <span class="badge-new">New</span>
+                </div>
+                <div class="product-info">
+                    <h3>USB-C Cable</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <span>(89)</span>
+                    </div>
+                    <div class="price">
+                        <span class="sale-price">$12.99</span>
+                    </div>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/product-4.jpg" alt="Product 4">
+                    <span class="badge-sale">-15%</span>
+                </div>
+                <div class="product-info">
+                    <h3>Portable Speaker</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <span>(412)</span>
+                    </div>
+                    <div class="price">
+                        <span class="original-price">$79.99</span>
+                        <span class="sale-price">$67.99</span>
+                    </div>
+                    <button class="btn btn-add-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="section-header">
+            <h2>Shop by Category</h2>
+        </div>
+        <div class="categories-grid">
+            <a href="page/products.html?category=electronics" class="category-card">
+                <i class="fa fa-laptop"></i>
+                <h3>Electronics</h3>
+            </a>
+            <a href="page/products.html?category=accessories" class="category-card">
+                <i class="fa fa-headphones"></i>
+                <h3>Accessories</h3>
+            </a>
+            <a href="page/products.html?category=cables" class="category-card">
+                <i class="fa fa-bolt"></i>
+                <h3>Cables & Adapters</h3>
+            </a>
+            <a href="page/products.html?category=smart-devices" class="category-card">
+                <i class="fa fa-mobile"></i>
+                <h3>Smart Devices</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>"Great quality products and fast shipping! Highly recommended."</p>
+                <div class="customer-info">
+                    <div class="avatar"></div>
+                    <div>
+                        <h4>John Doe</h4>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>"Excellent customer service. They resolved my issue quickly."</p>
+                <div class="customer-info">
+                    <div class="avatar"></div>
+                    <div>
+                        <h4>Jane Smith</h4>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>"Good products but delivery took a bit longer than expected."</p>
+                <div class="customer-info">
+                    <div class="avatar"></div>
+                    <div>
+                        <h4>Mike Johnson</h4>
+                        <p>Verified Buyer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Get exclusive deals and latest updates delivered to your inbox</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-1">
+                <i class="fa fa-truck"></i>
+                <div class="shipping-text">
+                    <h2>Free Shipping</h2>
+                    <p>on orders over $50</p>
+                </div>
+            </div>
+            <div class="footer-top-2">
+                <i class="fa fa-lock"></i>
+                <div class="shipping-text">
+                    <h2>Secure Payment</h2>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+            <div class="footer-top-3">
+                <i class="fa fa-undo"></i>
+                <div class="shipping-text">
+                    <h2>Easy Return</h2>
+                    <p>within 30 days return policy</p>
+                </div>
+            </div>
+            <div class="footer-top-4">
+                <i class="fa fa-headphones"></i>
+                <div class="shipping-text">
+                    <h2>Support</h2>
+                    <p>24/7 customer support</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-center">
+            <div class="footer-center-left">
+                <div class="footer-center-left-top">
+                    <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="20" cy="20" r="18" fill="#fff" />
+                        <circle cx="16" cy="20" r="4" fill="#3C7AC0" />
+                        <circle cx="24" cy="20" r="4" fill="#3C7AC0" />
+                        <circle cx="20" cy="16" r="4" fill="#3C7AC0" />
+                        <line x1="16" y1="20" x2="24" y2="20" stroke="#3C7AC0" stroke-width="2" />
+                        <line x1="20" y1="16" x2="20" y2="24" stroke="#3C7AC0" stroke-width="2" />
+                        <text x="45" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#fff">iShare</text>
+                    </svg>
+                </div>
+                <div class="footer-center-left-text">
+                    <p>Your trusted destination for quality products. Discover amazing deals and exclusive collections curated just for you.</p>
+                </div>
+                <div class="search">
+                    <div class="search-text">
+                        <h4>Stay updated</h4>
+                    </div>
+                    <div class="search-input">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+                <div class="social-icon">
+                    <span><a href="#"><i class="fa fa-facebook"></i></a></span>
+                    <span><a href="#"><i class="fa fa-twitter"></i></a></span>
+                    <span><a href="#"><i class="fa fa-linkedin"></i></a></span>
+                    <span><a href="#"><i class="fa fa-instagram"></i></a></span>
+                </div>
+            </div>
+            <div class="footer-center-right">
+                <div class="footer-center-right-1">
+                    <h4>Shop</h4>
+                    <ul class="shop-list">
+                        <li><a href="page/new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="page/best-sellers.html">Best Sellers</a></li>
+                        <li><a href="page/sale.html">Sale</a></li>
+                        <li><a href="page/products.html">All Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center-right-2">
+                    <h4>Help</h4>
+                    <ul class="help-list">
+                        <li><a href="page/contact.html">Customer Service</a></li>
+                        <li><a href="page/track-order.html">Track Order</a></li>
+                        <li><a href="page/shipping.html">Shipping Info</a></li>
+                        <li><a href="page/returns.html">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center-right-3">
+                    <h4>About</h4>
+                    <ul class="about-list">
+                        <li><a href="page/about.html">About Us</a></li>
+                        <li><a href="page/careers.html">Careers</a></li>
+                        <li><a href="page/press.html">Press</a></li>
+                        <li><a href="page/sustainability.html">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div class="footer-center-right-4">
+                    <h4>Legal</h4>
+                    <ul class="legal-list">
+                        <li><a href="page/terms.html">Terms of Service</a></li>
+                        <li><a href="page/privacy.html">Privacy Policy</a></li>
+                        <li><a href="page/cookies.html">Cookies Policy</a></li>
+                        <li><a href="page/accessibility.html">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-top">
+                <div class="footer-bottom-top-left">
+                    <i class="fa fa-envelope"></i>
+                    <div class="email-text">
+                        <span>Email Us</span>
+                        <p>support@ishare.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom-top-center">
+                    <i class="fa fa-phone"></i>
+                    <div class="phone-text">
+                        <span>Call Us</span>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="footer-bottom-top-right">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="address-text">
+                        <span>Visit Us</span>
+                        <p>123 Commerce Street, Tech City, TC 12345</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-bottom">
+                <div class="footer-bottom-bottom-left">
+                    <p>&copy; 2025 iShare E-commerce - All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-bottom-center">
+                    <ul>
+                        <li><a href="page/privacy.html">Privacy</a></li>
+                        <li><a href="page/terms.html">Terms</a></li>
+                        <li><a href="page/cookies.html">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-bottom-right">
+                    <p>Powered by <a href="#">iShare</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
 
 
 
