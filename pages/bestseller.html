@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>iShare Shop – Best Sellers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    .instagram-gradient {
+      background: linear-gradient(to right, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      height: 8px;
+      border-radius: 4px;
+      background: #e5e7eb;
+      outline: none;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px; height: 20px;
+      background: #3b82f6;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(59,130,246,0.4);
+      transition: all 0.2s;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+      box-shadow: 0 6px 16px rgba(59,130,246,0.5);
+    }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+
+  <!-- Instagram Gradient Header -->
+  <header class="instagram-gradient text-white py-12 px-6">
+    <h1 class="text-5xl font-bold">Best Sellers</h1>
+    <p class="text-xl mt-2 opacity-90">3 products available</p>
+  </header>
+
+  <div class="max-w-7xl mx-auto px-6 py-10 flex flex-col lg:flex-row gap-10">
+
+    <!-- Filters Sidebar (Left) -->
+    <aside class="w-full lg:w-80">
+      <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-100">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8">Filters</h2>
+
+        <!-- Category -->
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 mb-4">Category</h3>
+          <div class="space-y-4">
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" checked class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3">All Categories</span>
+            </label>
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3 flex items-center"><i class="fas fa-tv text-blue-500 mr-3"></i>Electronics</span>
+            </label>
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3 flex items-center"><i class="fas fa-tshirt text-purple-500 mr-3"></i>Fashion</span>
+            </label>
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3 flex items-center"><i class="fas fa-home text-orange-500 mr-3"></i>Home & Living</span>
+            </label>
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3 flex items-center"><i class="fas fa-futbol text-green-500 mr-3"></i>Sports & Outdoors</span>
+            </label>
+            <label class="flex items-center cursor-pointer hover:text-blue-600 transition">
+              <input type="radio" name="cat" class="w-5 h-5 text-blue-600"/>
+              <span class="ml-3 flex items-center"><i class="fas fa-book text-pink-500 mr-3"></i>Books & Stationery</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Price Range -->
+        <div class="mb-10">
+          <h3 class="font-semibold text-gray-800 mb-4">Price Range</h3>
+          <input type="range" min="0" max="1000" value="1000" class="w-full slider"/>
+          <div class="flex justify-between mt-3 text-sm text-gray-600">
+            <span>$0</span>
+            <span>$1000</span>
+          </div>
+        </div>
+
+        <button class="w-full py-3 bg-gray-100 hover:bg-gray-200 rounded-xl font-medium transition">
+          Reset Filters
+        </button>
+      </div>
+    </aside>
+
+    <!-- Main Content (Right) -->
+    <main class="flex-1">
+      <div class="flex justify-between items-center mb-8">
+        <p class="text-gray-600">Showing 3 results</p>
+        <div class="flex items-center gap-3">
+          <span class="text-gray-700">Sort by:</span>
+          <select class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+            <option>Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Product 1 -->
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800" alt="Headphones" class="w-full h-64 object-cover"/>
+            <span class="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Best Seller</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900">Premium Wireless Headphones</h3>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-yellow-500">★★★★★</span>
+              <span class="text-gray-600 text-sm">(128)</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3">
+              <span class="text-2xl font-bold text-gray-900">$199</span>
+              <span class="text-gray-500 line-through">$299</span>
+              <span class="bg-pink-100 text-red-500 px-3 py-1 rounded-full text-sm font-bold">-33%</span>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
+                <i class="fas fa-cart-plus"></i><p style="font-size: 10px;">Add to Cart</p>
+              </button>
+              <button class="px-6 border border-gray-300 rounded-xl hover:bg-gray-50 transition">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=800" alt="Watch" class="w-full h-64 object-cover bg-gray-100"/>
+            <span class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">New</span>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900">Smart Fitness Watch Pro</h3>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-yellow-500">★★★★☆</span>
+              <span class="text-gray-600 text-sm">(95)</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3">
+              <span class="text-2xl font-bold text-gray-900">$299</span>
+              <span class="text-gray-500 line-through">$399</span>
+              <span class="bg-pink-100 text-red-400 px-3 py-1 rounded-full text-sm font-bold">-25%</span>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
+                <i class="fas fa-cart-plus"></i> <p style="font-size: 10px;">Add to Cart</p>
+              </button>
+              <button class="px-6 border border-gray-300 rounded-xl hover:bg-gray-50 transition">Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2 duration-300">
+          <div class="relative">
+            <img src="/images/speakerbest.png" alt="speaker" class="w-full h-64 object-cover"/>
+          </div>
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-gray-900">Bluetooth Portable Speaker</h3>
+            <div class="flex items-center gap-2 mt-2">
+              <span class="text-yellow-500">★★★★★</span>
+              <span class="text-gray-600 text-sm">(142)</span>
+            </div>
+            <div class="mt-4 flex items-center gap-3">
+              <span class="text-2xl font-bold text-gray-900">$159</span>
+              <span class="text-gray-500 line-through">$220</span>
+              <span class="bg-pink-100 text-red-400 px-3 py-1 rounded-full text-sm font-bold">-28%</span>
+            </div>
+            <div class="mt-6 flex gap-3">
+              <button class="flex-1 bg-gradient-to-r from-purple-600 to-pink-600 text-white py-3 rounded-xl font-semibold hover:opacity-90 transition flex items-center justify-center gap-2">
+                <i class="fas fa-cart-plus"></i> <p style="font-size: 10px;">Add to Cart</p>
+              </button>
+              <button class="px-6 border border-gray-300 rounded-xl hover:bg-gray-50 transition">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Slider fill script -->
+  <script>
+    const slider = document.querySelector('.slider');
+    slider.addEventListener('input', (e) => {
+      const val = e.target.value;
+      const percent = (val / 1000) * 100;
+      e.target.style.background = `linear-gradient(to right, #3b82f6 0%, #3b82f6 ${percent}%, #e5e7eb ${percent}%, #e5e7eb 100%)`;
+    });
+    slider.dispatchEvent(new Event('input'));
+  </script>
+</body>
+</html>
